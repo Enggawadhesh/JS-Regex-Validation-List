@@ -1,33 +1,37 @@
-// Patterns
+// RegEx Patterns
 
 // Numbers only
-let numbers = /^[0-9]*$/;
+let numbersregex = /^[0-9]*$/;
 // or
-let numbers = /^\d*$/;
+let numbersregex = /^\d*$/;
 
 // 10 digits mobile number (only numbers)
 // You can change length
-let mobile = /^\d{10}$/;
+let mobileregex = /^\d{10}$/;
 
 // Alphabets only small letters
-let Alphabet = /^[a-z]*$/;
+let smAlphabetregex = /^[a-z]*$/;
 
 // Alphabets only capital letters
-let Alphabet = /^[A-Z]*$/;
+let capAlphabetregex = /^[A-Z]*$/;
 
 // Alphabets only capital and small letters
-let Alphabet = /^[a-zA-Z]*$/;
+let scAlphabetregex = /^[a-zA-Z]*$/;
 
 // Alphanumeric only with capital and small letters
-let Alphabet = /^[\da-zA-Z]*$/;
+let numAlphabetregex = /^[\da-zA-Z]*$/;
 
 // Username alphanumeric with '_' and 4-8 chars
 // You can edit username length by changing number 4(min) & 8(max)
-let username = /^([\da-zA-Z_]){4,8}$/;
+let usernameregex = /^([a-zA-Z\d_]){4,8}$/;
+
+// or (i- case insensitive)
+let iUsernameregex = /^([a-z\d_]){4,8}$/i;
 
 // Email 
-let email = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+let emailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
 
 // Web URL
 // Ex. example.com or example.co.in, www.example.com, http://example.com, http://www.example.com
-let url = /^(http[s]?:\/\/)?(www\.)?[a-zA-Z0-9]+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+let urlregex = /^(http[s]?:\/\/)?(www\.)?[a-zA-Z0-9]+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+
