@@ -30,10 +30,13 @@ $usernameregex = /^([a-zA-Z\d_]){4,8}$/;
 $iUsernameregex = /^([a-z\d_]){4,8}$/i;
 
 // Full Name (with first & last name)
-$fullnameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}$/i;
+$fullnameregex = /^[a-zA-z]{2,20}[ ][a-zA-z]{3,20}$/i;
 
 // Full Name (with first & middle & last name)
 $fullmnameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}[ ][a-zA-z]{3,}$/i;
+
+// Full Name (middle name optional)
+$middlenameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}([ ][a-zA-z]{3,})?$/i;
 
 // Email 
 $emailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;

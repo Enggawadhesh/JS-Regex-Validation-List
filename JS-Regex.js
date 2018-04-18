@@ -29,10 +29,13 @@ let usernameregex = /^([a-zA-Z\d_]){4,8}$/;
 let iUsernameregex = /^([a-z\d_]){4,8}$/i;
 
 // Full Name (with first & last name)
-let fullnameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}$/i;
+let fullnameregex = /^[a-zA-z]{2,20}[ ][a-zA-z]{3,20}$/i;
 
 // Full Name (with first & middle & last name)
 let fullmnameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}[ ][a-zA-z]{3,}$/i;
+
+// Full Name (middle name optional)
+let middlenameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}([ ][a-zA-z]{3,})?$/i;
 
 // Email 
 let emailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
