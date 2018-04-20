@@ -37,8 +37,11 @@ let fullmnameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}[ ][a-zA-z]{3,}$/i;
 // Full Name (middle name optional)
 let middlenameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}([ ][a-zA-z]{3,})?$/i;
 
-// Email 
+// Normal Email 
 let emailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+
+// Standard Email
+let semailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,12})(\.[a-z]{2,12}){0,2}?$/;
 
 // Web URL
 // Ex. example.com or example.co.in, www.example.com, http://example.com, http://www.example.com
