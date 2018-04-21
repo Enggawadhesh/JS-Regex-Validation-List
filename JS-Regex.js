@@ -45,4 +45,4 @@ let semailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,12})(\.[a-z]{2,12}){0,
 
 // Web URL
 // Ex. example.com or example.co.in, www.example.com, http://example.com, http://www.example.com
-let urlregex = /^(http[s]?:\/\/)?(www\.)?[a-zA-Z0-9]+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+let urlregex = /^(http[s]?:\/\/)?(www\.)?[a-zA-Z0-9]+([-]?\w+)\.([a-z]{2,12})(\.[a-z]{2,12}){0,2}?$/;
