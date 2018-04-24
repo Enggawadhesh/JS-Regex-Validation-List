@@ -42,8 +42,8 @@ $middlenameregex = /^[a-zA-z]{3,}[ ][a-zA-z]{3,}([ ][a-zA-z]{3,})?$/i;
 $emailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
 
 // Standard Email
-$semailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,12})(\.[a-z]{2,12}){0,2}?$/;
+$semailregex = /^\w+([\.-]?\w+)@\w+([-]?\w+)\.([a-z]{2,12})(\.[a-z]{2,12}){0,1}?$/;
 
 // Web URL
 // Ex. example.com or example.co.in, www.example.com, http://example.com, http://www.example.com
-$urlregex = /^(http[s]?:\/\/)?(www\.)?[a-zA-Z0-9]+([-]?\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+$urlregex = /^(http[s]?:\/\/)?(www\.)?[a-zA-Z0-9]+([-]?\w+)\.([a-z]{2,12})(\.[a-z]{2,12})?$/;
