@@ -1,5 +1,8 @@
 // RegEx Patterns
 
+// get all white space
+let allwhitespace = /(\s+)/ug;
+
 // Numbers only
 let numbersregex = /^[0-9]*$/;
 // or
