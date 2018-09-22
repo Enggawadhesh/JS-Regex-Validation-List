@@ -9,6 +9,9 @@ $numbersregex = "/^[0-9]*$/";
 // or
 $numbersregex = "/^\d*$/";
 
+// Float like 123.00
+$floatregex = "/^([1-9]*[.])00$/";
+
 // 10 digits mobile number (only numbers)
 // You can change length
 $mobileregex = "/^\d{10}$/";

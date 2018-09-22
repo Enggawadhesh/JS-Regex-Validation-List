@@ -8,6 +8,9 @@ let numbersregex = /^[0-9]*$/;
 // or
 let numbersregex = /^\d*$/;
 
+// Float like 123.00
+let floatregex = /^([1-9]*[.])00$/;
+
 // 10 digits mobile number (only numbers)
 // You can change length
 let mobileregex = /^\d{10}$/;
