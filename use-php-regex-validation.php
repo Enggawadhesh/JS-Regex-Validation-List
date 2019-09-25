@@ -59,3 +59,19 @@ $emailval   = 'yourname@example.com';
 		return ( preg_replace("/(\s+)/u",'WS',$string ) );
 	}
 	echo spaces("abc def ghi");
+
+/**
+ *
+ * Find link from text and Replace actual link
+ *
+*/
+	function addScheme($url, $scheme = 'http://') {
+	 	return parse_url($url, PHP_URL_SCHEME) === null ? $scheme . $url : $url;
+	}
+
+	function linkText( $text ) {
+		$urlRegex = "/(((https?:\/\/)|(www\.))[^\s]+)|([^\s]+\.([a-z]{2,})+)|([\.A-z0-9_\-\+]+[@][A-z0-9_\-]+([.][A-z0-9_\-\.]+)+[A-z]{2,4}$)|(\b\d+?\b(?!(?:[\.,]\d+)|(?:\s*(?:%|percent))))/";
+		return preg_replace_callback($urlRegex, function($url) {
+			return '<a href="'.addScheme( $url[0] ).'" target="_blank">'.$url[0].'</a>';
+		}, $text );
+	}
